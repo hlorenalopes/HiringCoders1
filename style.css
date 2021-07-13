@@ -1,4 +1,5 @@
 :root {
+  --white: #fff;
   --light: #f5eded;
   --red: #d72323;
   --black: #000;
@@ -12,6 +13,47 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--light);
-  font-size: 1.5rem;
+  background-color: var(--light);
+  color: var(--grey);
+  font-size: 1.125rem;
+}
+
+h1 {
+  color: var(--black);
+  font-size: 7rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  max-width: 355px;
+  line-height: 82px;
+  letter-spacing: -4px;
+}
+
+h1 span {
+  color: var(--red);
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  color: var(--grey);
+  text-align: center;
+}
+
+.input {
+  width: 480px;
+  height: 48px;
+}
+
+button {
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  width: 205px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
