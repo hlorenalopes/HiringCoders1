@@ -16,9 +16,12 @@ body {
   background-color: var(--light);
   color: var(--grey);
   font-size: 1.125rem;
+  text-align: center;
 }
 
 h1 {
+  margin: 0 auto;
+  padding: 82px 32px 22px;
   color: var(--black);
   font-size: 7rem;
   font-weight: 900;
@@ -33,15 +36,34 @@ h1 span {
   color: var(--red);
 }
 
+p {
+  max-width: 355px;
+  margin: 0 auto;
+}
+
+.line {
+  margin: 21.5px auto 21.5px;
+  height: 1px;
+  background-color: var(--red);
+  width: 90px;
+}
+
+input:first-child {
+  margin-top: 43px;
+}
+
 input {
   border: none;
   border-radius: 5px;
   font-size: 1.125rem;
   color: var(--grey);
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .input {
+  margin: 0 auto 21.5px;
   width: 480px;
   height: 48px;
 }
@@ -56,4 +78,15 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 62px;
+  }
+
+  .input {
+    width: 304px;
+  }
 }
