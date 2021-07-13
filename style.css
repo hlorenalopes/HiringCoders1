@@ -1,0 +1,17 @@
+:root {
+  --light: #f5eded;
+  --red: #d72323;
+  --black: #000;
+  --grey: #3e3636;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--light);
+  font-size: 1.5rem;
+}
