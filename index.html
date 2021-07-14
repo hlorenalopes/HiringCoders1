@@ -19,11 +19,22 @@
   <p>Cadastre-se e seja um dos primeiros a aproveitar nossas ofertas imperdíveis!</p>
   <div class="line"></div>
 
-  <form action="#" method="post">
-    <input class="input" type="text" placeholder="Digite o seu nome">
-    <input class="input" type="text" placeholder="Digite o seu e-mail">
-    <button type="submit">Cadastrar-se</button>
+  <form>
+    <input id="name" class="input" type="text" placeholder="Digite o seu nome">
+    <input id="email" class="input" type="text" placeholder="Digite o seu e-mail">
+    <button onClick="getData()" type="submit">Cadastrar-se</button>
   </form>
+
+  <script type="text/javascript">
+    function getData() {
+      let inputName = document.getElementById('name');
+      let inputEmail = document.getElementById('email');
+      localStorage.setItem('nome', inputName.value);
+      localStorage.setItem('email', inputEmail.value);
+      let storedName = localStorage.getItem('name');
+      alert('Cadastro realizado com sucesso!');
+    }
+  </script>
 </body>
 
 </html>
